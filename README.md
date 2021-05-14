@@ -18,7 +18,7 @@ my custom version of toast editor
 
     [Bootstrap Markdown Editor](http://inacho.github.io/bootstrap-markdown-editor/)
 
-    ![Markdown%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8%E1%84%80%E1%85%B5%201b789ea75b8e4d53bb133026291e49bd/Untitled.png](Markdown%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8%E1%84%80%E1%85%B5%201b789ea75b8e4d53bb133026291e49bd/Untitled.png)
+    ![Bootstrap Markdown Editor](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/BootStrap%20markdown%20Editor.png)
 
 - 2. JS-Markdown-Editor
 
@@ -36,7 +36,7 @@ my custom version of toast editor
 
     [Markdown Editor](https://rawgit.com/Grafikart/JS-Markdown-Editor/master/dist/demo.html)
 
-    ![Markdown%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8%E1%84%80%E1%85%B5%201b789ea75b8e4d53bb133026291e49bd/Untitled%201.png](Markdown%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8%E1%84%80%E1%85%B5%201b789ea75b8e4d53bb133026291e49bd/Untitled%201.png)
+    ![JS-markdown-editor-file](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/JS-markdown-editor.png)
 
 - 3. Woofmark
 
@@ -54,7 +54,7 @@ my custom version of toast editor
 
     [woofmark](https://bevacqua.github.io/woofmark/)
 
-    ![Markdown%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8%E1%84%80%E1%85%B5%201b789ea75b8e4d53bb133026291e49bd/Untitled%202.png](Markdown%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8%E1%84%80%E1%85%B5%201b789ea75b8e4d53bb133026291e49bd/Untitled%202.png)
+    ![Woofmark-markdown-editor](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/Woofmark.png)
 
 - 4. Ckeditor5
 
@@ -121,19 +121,19 @@ my custom version of toast editor
 
         **원래의 popup**
 
-        ![Markdown%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8%E1%84%80%E1%85%B5%201b789ea75b8e4d53bb133026291e49bd/Untitled%203.png](Markdown%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8%E1%84%80%E1%85%B5%201b789ea75b8e4d53bb133026291e49bd/Untitled%203.png)
+        ![원래의-popup](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/%EC%9B%90%EB%9E%98%EC%9D%98%20popup.png)
 
         2. customizing 후의 Insert Image 창
 
         **현재의 popup**
 
-        ![Markdown%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8%E1%84%80%E1%85%B5%201b789ea75b8e4d53bb133026291e49bd/Untitled%204.png](Markdown%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8%E1%84%80%E1%85%B5%201b789ea75b8e4d53bb133026291e49bd/Untitled%204.png)
+        ![현재의 popup](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/%ED%98%84%EC%9E%AC%EC%9D%98%20popup.png)
 
         3. 이미지 서버 업로드 로딩시 화면
 
         **loading progress 표시**
 
-        ![Markdown%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8%E1%84%80%E1%85%B5%201b789ea75b8e4d53bb133026291e49bd/Untitled%205.png](Markdown%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8%E1%84%80%E1%85%B5%201b789ea75b8e4d53bb133026291e49bd/Untitled%205.png)
+        ![image loading progress](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/image%20upload%20loading%20progress%20%ED%91%9C%EC%8B%9C.png)
 
         4. 서버 업로드 작업
 
@@ -145,7 +145,7 @@ my custom version of toast editor
 
         — **업로드된 후 자동으로 url은 업로드된 경로로 변경됨** —
 
-        ![Markdown%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8%E1%84%80%E1%85%B5%201b789ea75b8e4d53bb133026291e49bd/Untitled%206.png](Markdown%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8%E1%84%80%E1%85%B5%201b789ea75b8e4d53bb133026291e49bd/Untitled%206.png)
+        ![서버업로드 작업](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%84%9C%EB%B2%84%20%EC%97%85%EB%A1%9C%EB%93%9C.png)
 
         5. 업로드 성공시
 
@@ -153,7 +153,7 @@ my custom version of toast editor
 
         prompt box 표시(animation)
 
-        ![Markdown%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8%E1%84%80%E1%85%B5%201b789ea75b8e4d53bb133026291e49bd/Untitled%207.png](Markdown%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8%E1%84%80%E1%85%B5%201b789ea75b8e4d53bb133026291e49bd/Untitled%207.png)
+        ![success prompt](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/image%20upload%20success%20prompt.gif)
 
         6. 업로드 실패시
 
@@ -161,4 +161,4 @@ my custom version of toast editor
 
         prompt box 표시(animation)
 
-        ![Markdown%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8%E1%84%80%E1%85%B5%201b789ea75b8e4d53bb133026291e49bd/Untitled%208.png](Markdown%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8%E1%84%80%E1%85%B5%201b789ea75b8e4d53bb133026291e49bd/Untitled%208.png)
+        ![fail prompt](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/image%20upload%20fail%20prompt.png)
