@@ -105,9 +105,9 @@ my custom version of toast editor
 
     [nhn/tui.editor](https://github.com/nhn/tui.editor)
 
-**최종적으로 선택한 markdown editor**
+# 최종적으로 선택한 markdown editor
 
-:  Toast UI Editor
+## Toast UI Editor
 
 선택 이유
 
@@ -115,50 +115,80 @@ my custom version of toast editor
 - live preview가능
 - 상업적으로 이용시에도 무료
 - 깔끔한 디자인
+- ajax를 사용 X 
+#### 참고
 
-- Toast UI 에게서 필요한것
-    - 1.Insert Image popup에서 clipboard 탭이 하나더 필요
+**customization 후에도 ajax 사용 X** 
+## 기존의 Toast UI에서 추가한 기능
+### 이미지 관련 기능
+1. Image Tab에서 ClipBoard tab 추가
+- Clipboard에 복사한 이미지를 ` Ctrl + V ` 로 바로 업로드 가능
+2. 기존의 base64인코딩으로 처리되던 image를 서버로 업로드
+3. 이미지 업로드시 loading progress 표시
+4. 이미지 성공 여부에 따른 prompt box 표시
 
-        **원래의 popup**
+### 링크 관련 기능
+1. Link tab에서 Target 관련 CheckBox 추가
+- CheckBox 클릭 시 링크가 새로운 탭에서 열린다
+2. `{target='_blank'}` 관련한 markdown 문법 지원
 
-        ![원래의-popup](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/%EC%9B%90%EB%9E%98%EC%9D%98%20popup.png)
+### 이미지 관련 
+  - 1.Insert Image popup에서 clipboard 탭이 하나더 필요
 
-        2. customizing 후의 Insert Image 창
+      **원래의 popup**
 
-        **현재의 popup**
+      ![원래의-popup](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/%EC%9B%90%EB%9E%98%EC%9D%98%20popup.png)
 
-        ![현재의 popup](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/%ED%98%84%EC%9E%AC%EC%9D%98%20popup.png)
+      2. customizing 후의 Insert Image 창
 
-        3. 이미지 서버 업로드 로딩시 화면
+      **현재의 popup**
 
-        **loading progress 표시**
+      ![현재의 popup](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/%ED%98%84%EC%9E%AC%EC%9D%98%20popup.png)
 
-        ![image loading progress](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/image%20upload%20loading%20progress%20%ED%91%9C%EC%8B%9C.png)
+      3. 이미지 서버 업로드 로딩시 화면
 
-        4. 서버 업로드 작업
+      **loading progress 표시**
 
-        기존의 **toast ui editor**는 **base64**형태로 이미지를 처리
+      ![image loading progress](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/image%20upload%20loading%20progress%20%ED%91%9C%EC%8B%9C.png)
 
-        이는, 이미지 **랜더링**시 많은 부하 유발
+      4. 서버 업로드 작업
 
-        (따라서, 서버로 업로드 결정)
+      기존의 **toast ui editor**는 **base64**형태로 이미지를 처리
 
-        — **업로드된 후 자동으로 url은 업로드된 경로로 변경됨** —
+      이는, 이미지 **랜더링**시 많은 부하 유발
 
-        ![서버업로드 작업](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%84%9C%EB%B2%84%20%EC%97%85%EB%A1%9C%EB%93%9C.png)
+      (따라서, 서버로 업로드 결정)
 
-        5. 업로드 성공시
+      — **업로드된 후 자동으로 url은 업로드된 경로로 변경됨** —
 
-        **success!!** 
+      ![서버업로드 작업](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%84%9C%EB%B2%84%20%EC%97%85%EB%A1%9C%EB%93%9C.png)
 
-        prompt box 표시(animation)
+      5. 업로드 성공시
 
-        ![success prompt](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/image%20upload%20success%20prompt.gif)
+      **success!!** 
 
-        6. 업로드 실패시
+      prompt box 표시(animation)
 
-        **failed!!**
+      ![success prompt](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/image%20upload%20success%20prompt.gif)
 
-        prompt box 표시(animation)
+      6. 업로드 실패시
 
-        ![fail prompt](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/image%20upload%20fail%20prompt.png)
+      **failed!!**
+
+      prompt box 표시(animation)
+
+      ![fail prompt](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/image%20upload%20fail%20prompt.png)
+      
+      ### 링크 관련
+      
+      1. Target 속성에 New Window checkbox 추가
+      
+      ![link new window checkbox](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/link%20%EA%B4%80%EB%A0%A8%20tab.png)
+      
+      2. `New Window` checkbox 클릭시 `{target='_blank'}` 추가됨
+      
+      ![target blank image](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/link%20target%20_blank%20image.png)
+      
+      3. 실질적으로 html 태그에 `target='_blank'` 라는 속성 자동으로 추가됨
+
+      ![html blank attribute added](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/markdownEditorPictures/link%20html%20target%20blank.png)
