@@ -17,26 +17,7 @@ document.addEventListener("DOMContentLoaded",()=>
 			options: {linkAttribute: {target: '_blank'}	}
 		});
 
-	// editor_node.innerHTML += `<div id="success_prompt" style='background-color: green;
-    // color: white;
-    // position: absolute;
-    // right: 38%;
-    // top: 70%;
-    // /* height: 5%; */
-    // /* margin: auto; */
-    // width: 25%;
-    // min-width: fit-content;
-    // display: block;
-    // border-radius: 15px;
-    // height: fit-content;
-    // padding 15px: ;
-    // text-align: center;'>SUCCESS</div>`;
-
-
 		TOAST_EDITOR[editor_node.dataset.name] = toast_editor;
-		
-		//const success_prompt = editor_node.parentNode.querySelector(":scope #success_prompt");
-		//const fail_prompt = editor_node.parentNode.querySelector(":scope #fail_prompt");
 		
 		const clipboard_data_holder = editor_node.querySelector(":scope #clipboard_data");
 		window.addEventListener('paste', function(e)
@@ -71,35 +52,6 @@ document.addEventListener("DOMContentLoaded",()=>
 		// 1. 대상 선정
 		let preview_target = document.querySelector('div.te-preview');
 		
-		// 2. Observer 인스턴스 생성
-		// var observer = new MutationObserver(function(mutations) {
-		// 	mutations.forEach(function(mutation) {
-		// 		console.log(mutation.target.innerHTML);
-		// 		mutation.target.innerHTML.replaceAll(`a>{target='_blank'}`,'a>');
-		// 		console.log(mutation);
-		// 	});
-		// });
-
-		// 3. 옵션 설정
-		// var config = {
-		// 	childList:true,
-		// 	subtree: true
-		// }
-		// observer.observe(preview_target, config);
-		// window.addEventListener('click', function(e) {
-		// 	e.composedPath().find((node) => 
-		// 	{
-		// 		if(!node.className) return;
-		// 		// if(node.className.includes('write'))
-		// 		// {
-		// 		// 	window.postMessage("COMMAND_WRITE", "*");
-		// 		// }
-		// 		if(node.className.includes('modify'))
-		// 		{
-		// 			window.postMessage("COMMAND_MODIFY", "*");
-		// 		}
-		// 	});
-		// });
 		window.addEventListener('message', function(e)
 		{
 			console.log('mess posted');
@@ -149,30 +101,6 @@ document.addEventListener("DOMContentLoaded",()=>
 	
 	function success_prompt()
 	{
-	// 	let form_ = document.querySelector('form.ttb-content')
-	// 	form_.innerHTML+=`<div class="alert success">
-	// 	<span class="closebtn">&times;</span>  
-	// 	<strong>Success!</strong> Indicates a successful or positive action.
-	//   </div>`;
-		//let contain = window.document.createElement('div');
-		//contain.setAttribute('id', 'prompt3604');
-		//contain.innerHTML += "<div style='background-color:green; color:white; width: 50%; display:block; height:fit-content; padding 15px;'>SUCCESS</div>";
-		// window.document.body.innerHTML += `<div id="success_prompt" style=' background-color: green;
-		// color: white;
-		// position: absolute;
-		// right: 35%;
-		// top: 70%;
-		// height: 5%;
-		// /* margin: auto; */
-		// width: 25%;
-		// min-width: fit-content;
-		// border-radius: 15px;
-		// height: fit-content;
-		// padding: 15px;
-		// text-align: center;
-		// animation-name: show-to-none;
-		// animation-duration:3s;'>SUCCESS</div>`;
-
 		var obj = document.createElement('div');
 		obj.id = "prompt";
 		obj.innerText = 'SUCCESS';
@@ -218,25 +146,6 @@ document.addEventListener("DOMContentLoaded",()=>
 		animation-duration:3s;`;
 		document.querySelector('section').appendChild(obj);
 		setTimeout(function(){window.document.body.querySelector('section> div#prompt').remove()},2500);
-		//let form_ = document.querySelector('form.ttb-content')
-		//let s_prompt = body.createElement("div");
-		//document.innerHTML += "<div style='background-color:green; color:white; width: 50%; display:block; height:fit-content; padding 15px;'>SUCCESS</div>";
-		// body.innerHTML += `<div id="fail_prompt" style='    background-color: red;
-		// color: white;
-		// position: absolute;
-		// right: 35%;
-		// top: 70%;
-		// height: 5%;
-		// /* margin: auto; */
-		// width: 25%;
-		// min-width: fit-content;
-		// border-radius: 15px;
-		// height: fit-content;
-		// padding: 15px;
-		// text-align: center;
-		// -webkit-animation: show-to-none;
-		// animation-duration:3s;'>FAIL</div>`;
-		//setTimeout(function(){body.querySelector('#fail_prompt').remove()},3000);
 	}
 	/* 이 웹페이지를 상징하는 시멘틱 객체 */
 	window.page = {};
@@ -266,9 +175,6 @@ document.addEventListener("DOMContentLoaded",()=>
 		}
 		if(command.type == "WRITE" || command.type == 'MODIFY')
 		{
-			// let title = document.querySelector("#title");
-			// let writer = document.querySelector("#writer");
-
 			let formData = new FormData();
 			// formData.append('title', title.value);
 			// formData.append('writer', writer.value);
