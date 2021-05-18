@@ -1,18 +1,15 @@
-//import { ttb } from "../ttb_request.js";
 
 if(!window.TOAST_EDITOR) window.TOAST_EDITOR = {};
 document.addEventListener("DOMContentLoaded",()=>
 {
-	document.querySelectorAll('.ttb-editor').forEach((editor_node) =>
-	{//editor_node.innerHTML = editor_node.innerText.replaceAll('&gt;','>')
+	document.querySelectorAll('.yj-editor').forEach((editor_node) =>
+	{
 		const toast_editor = new tui.Editor(
 		{
 			el: editor_node,
 			initialEditType: 'markdown',
 			previewStyle: 'vertical',
 			height: editor_node.dataset.editorHeight,
-			//initialValue: editor_node.innerHTML,
-			//initialValue: editor_node.innerHTML.replaceAll('&gt;','>'),
 			initialValue: unescapeHtml(editor_node.innerHTML),
 			options: {linkAttribute: {target: '_blank'}	}
 		});
@@ -34,7 +31,6 @@ document.addEventListener("DOMContentLoaded",()=>
 				}
 				if(node.id.match(/clipboard_data/))
 				{
-					// 여기 부분 수정 필요
 					if(e.clipboardData.items[0].type.includes('image'))
 					{
 						window.clip_item = {type: 'image'};
@@ -121,7 +117,6 @@ document.addEventListener("DOMContentLoaded",()=>
 		animation-duration:3s;`;
 		document.querySelector('section').appendChild(obj);
 		setTimeout(function(){window.document.body.querySelector('section> div#prompt').remove()},2500);
-		//window.document.body.innerHTML += '';
 	}
 	// fail prompt
 	function fail_prompt()
@@ -268,5 +263,5 @@ document.addEventListener("DOMContentLoaded",()=>
 		console.log('get_setting 확인 위한 request입니다.');
 		console.dir(this);
 		let setting = this.get_setting();
-		ttb.request(setting.use, setting.method, setting.action_url, formData, setting.callback, setting.custom_header);
+		yj.request(setting.use, setting.method, setting.action_url, formData, setting.callback, setting.custom_header);
 	};
