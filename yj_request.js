@@ -1,7 +1,5 @@
-/* 하단 부분은 필요시 수정하고 모듈로 변환하여 통신시 사용하도록 만들어두삼 */
-/* 브라우저 환경에서 통신시 사용할 통신 인터페이스formData는 new FormData() 임 */
-const ttb = {};
-ttb.request = function(use, method, url, formData, callback, custom_headers)
+const yj = {};
+yj.request = function(use, method, url, formData, callback, custom_headers)
 {
 	if (use == "SEND")
 	{
@@ -70,7 +68,4 @@ ttb.request = function(use, method, url, formData, callback, custom_headers)
 		window.location.href = url + params;
 	}
 };
-ttb.redirect = function() {
 
-}
-//export { ttb }
