@@ -1,5 +1,8 @@
 # Toast-markdown-editor
-my custom version of toast editor
+My custom version of Toast UI Editor
+
+### 사용법 참고
+[How to use](https://github.com/PowerStream3604/Toast-markdown-editor/blob/main/%EC%82%AC%EC%9A%A9%EB%B2%95.md)
 # Markdown 편집기
 
 - 1. Bootstrap Markdown Editor
